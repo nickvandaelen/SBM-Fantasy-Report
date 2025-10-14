@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Football Week 6 Report</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0F77BD] text-gray-200 p-4 sm:p-6 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-[#FFC300] tracking-tighter">THE WEEK 6 REPORT</h1>
+            <p class="text-xl md:text-2xl font-bold text-[#DAF7A6] mt-2">The Rico Dowdle Trade Homicide</p>
+        </header>
+
+        <section class="mb-12 bg-black bg-opacity-20 p-6 rounded-2xl shadow-2xl">
+            <p class="text-lg text-center leading-relaxed">This week was a masterclass in fantasy football extremes. For some, it was the sweet taste of finding a league-winning asset; for one particular manager, it was the catastrophic, self-inflicted wound of trading that same asset away two days before his legendary explosion. The moral of Week 6 is simple: sometimes, the worst opponent is the General Manager in the mirror.</p>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-extrabold text-center mb-8 text-[#FF5733]">The Unforgivable Carnage</h2>
+            <div class="bg-black bg-opacity-20 p-6 rounded-2xl shadow-2xl">
+                 <div class="chart-container h-96 md:h-[500px] max-h-[500px]">
+                    <canvas id="matchupScoresChart"></canvas>
+                </div>
+                <p class="text-center mt-4 text-gray-400">The scores reflect a pivotal week, highlighting Unofficial Airlines' historic outlier and the brutal 5.6-point loss for Terry We Got A Situation.</p>
+                
+                <h3 class="text-2xl font-bold text-center mt-8 mb-4 text-[#DAF7A6]">Week 6 Game Summaries</h3>
+                <ul class="space-y-3 p-4 bg-gray-900 bg-opacity-30 rounded-lg">
+                    <li><span class="font-bold text-[#FFC300]">Unofficial Airlines (214.5) vs Nick's Nifty Team (155.7):</span> A bloodbath fueled by the Dowdle trade. UOA records the highest score of the season, a devastating demonstration of power.</li>
+                    <li><span class="font-bold text-[#FFC300]">First Down Syndrome (170.5) vs Terry We Got A Situation (164.9):</span> The tightest matchup, decided by a mere 5.6 points. A crushing loss for Terry, who saw the points he traded away beat him.</li>
+                    <li><span class="font-bold text-[#FFC300]">Flying Fish (165.2) vs Matt Gay (154.0):</span> A high-scoring affair that secures a crucial win for the Flying Fish, keeping their playoff hopes afloat in the crowded 2-4 tier.</li>
+                    <li><span class="font-bold text-[#FFC300]">Toadhawks (152.2) vs Team ianb (147.5):</span> A professional victory for the Toadhawks, maintaining their strong hold on the #2 spot despite a respectable score from Team ianb.</li>
+                    <li><span class="font-bold text-[#FFC300]">The Railroads (165.7) vs Farm, Aura (145.9):</span> The Railroads bounce back with a huge score, proving they belong in the mid-tier scrum, while Farm, Aura takes an uncharacteristic hit.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-extrabold text-center mb-8 text-[#FF5733]">The Power Rankings: No Room for Sentiment</h2>
+            <div class="bg-black bg-opacity-20 p-6 rounded-2xl shadow-2xl">
+                <div class="chart-container h-96 md:h-[450px] max-h-[450px]">
+                    <canvas id="powerRankingsChart"></canvas>
+                </div>
+                <p class="text-center mt-4 text-gray-400">The Dowdle Heist propels Unofficial Airlines into the top tier, while the rest of the league fights for scraps.</p>
+                
+                <h3 class="text-2xl font-bold text-center mt-8 mb-4 text-[#DAF7A6]">Ranking Justifications</h3>
+                <ol class="list-decimal list-inside space-y-3 p-4 bg-gray-900 bg-opacity-30 rounded-lg text-lg">
+                    <li><span class="font-bold text-[#DAF7A6]">First Down Syndrome:</span> Untouchable. The only undefeated team with a consistent, high-floor lineup.</li>
+                    <li><span class="font-bold text-[#DAF7A6]">Toadhawks:</span> Still dominant at 5-1. Elite coaching and reliable scoring keep them firmly in the title conversation.</li>
+                    <li><span class="font-bold text-[#FFC300]">Unofficial Airlines:</span> The Dowdle acquisition changes everything. High score proves elite ceiling potential, moving them up despite the 3-3 record.</li>
+                    <li><span class="font-bold text-[#FFC300]">The Railroads:</span> A solid Week 6 score (165.7) confirms stability. A team built to grind out wins in the 3-3 bubble.</li>
+                    <li><span class="font-bold text-[#FFC300]">Farm, Aura:</span> Good record (4-2) but a worrying loss this week. Needs a bounce-back to avoid sliding.</li>
+                    <li><span class="font-bold text-[#FF5733]">Flying Fish:</span> Clutch win keeps them competitive, but the 2-4 record and lack of consistently high scores hold them back.</li>
+                    <li><span class="font-bold text-[#FF5733]">Terry We Got A Situation:</span> The Rico Dowdle trade is a black mark. Despite a high losing score (164.9), the self-sabotage lowers morale and ranking.</li>
+                    <li><span class="font-bold text-[#C70039]">Matt Gay:</span> Consistent scoring, but consistently losing. Needs a major roster move or a lucky streak to change the 2-4 narrative.</li>
+                    <li><span class="font-bold text-[#C70039]">Nick's Nifty Team:</span> Crushed this week by UOA. Showed flashes, but needs more firepower to exit the bottom tier.</li>
+                    <li><span class="font-bold text-[#C70039]">Team ianb:</span> Stuck at the bottom. The 1-5 record reflects a roster needing fundamental overhaul.</li>
+                </ol>
+            </div>
+        </section>
+        
+        <section class="mb-12">
+            <h2 class="text-3xl font-extrabold text-center mb-8 text-[#FF5733]">The Playoff Picture: A Terrifying Mess</h2>
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                 <div class="bg-black bg-opacity-20 p-6 rounded-2xl shadow-2xl">
+                    <div class="chart-container h-80 md:h-96 max-h-96">
+                        <canvas id="playoffTiersChart"></canvas>
+                    </div>
+                 </div>
+                <div class="bg-black bg-opacity-20 p-6 rounded-2xl shadow-2xl">
+                    <h3 class="text-xl font-bold text-center mb-4 text-[#DAF7A6]">Current Standings (End of Week 6)</h3>
+                    <ul class="space-y-2 text-center">
+                        <li><span class="font-bold">1. First Down Syndrome</span> (6-0)</li>
+                        <li><span class="font-bold">2. Toadhawks</span> (5-1)</li>
+                        <li><span class="font-bold">3. Farm, Aura</span> (4-2)</li>
+                        <li><span class="font-bold">4. Unofficial Airlines</span> (3-3)</li>
+                        <li><span class="font-bold">5. The Railroads</span> (3-3)</li>
+                        <li><span class="font-bold">6. Flying Fish</span> (2-4)</li>
+                        <li><span class="font-bold">7. Terry We Got A Situation</span> (2-4)</li>
+                        <li><span class="font-bold">8. Matt Gay</span> (2-4)</li>
+                        <li><span class="font-bold">9. Nick's Nifty Team</span> (2-4)</li>
+                        <li><span class="font-bold">10. Team ianb</span> (1-5)</li>
+                    </ul>
+                </div>
+             </div>
+        </section>
+        
+        <section class="text-center py-8 border-t border-gray-700">
+            <h2 class="text-3xl font-bold text-[#DAF7A6] mb-4">Week 7: The Reckoning</h2>
+            <p class="text-lg text-gray-400 mb-6">The 2-4 and 3-3 tiers cannibalize each other, with multiple managers fighting for their season's life.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xl font-bold">
+                
+                <div class="p-4 bg-gray-900 bg-opacity-30 rounded-lg shadow-md">
+                    <p class="text-2xl text-[#FFC300]">Showdown of the Desperate</p>
+                    <p class="mt-2"><span class="text-[#C70039]">Terry We Got A Situation (2-4)</span> vs.</p>
+                    <p><span class="text-[#C70039]">Matt Gay (2-4)</span></p>
+                    <p class="text-sm font-normal text-gray-400 mt-2">A true must-win. The loser falls to 2-5 and likely out of contention.</p>
+                </div>
+                
+                <div class="p-4 bg-gray-900 bg-opacity-30 rounded-lg shadow-md">
+                    <p class="text-2xl text-[#DAF7A6]">The Undefeated vs. The Bottom</p>
+                    <p class="mt-2"><span class="text-[#DAF7A6]">First Down Syndrome (6-0)</span> vs.</p>
+                    <p><span class="text-[#C70039]">Team ianb (1-5)</span></p>
+                    <p class="text-sm font-normal text-gray-400 mt-2">Team ianb attempts the impossible. FDS looks to secure the first playoff spot.</p>
+                </div>
+
+                <div class="p-4 bg-gray-900 bg-opacity-30 rounded-lg shadow-md">
+                    <p class="text-2xl text-[#FFC300]">The New Contender Test</p>
+                    <p class="mt-2"><span class="text-[#FFC300]">Unofficial Airlines (3-3)</span> vs.</p>
+                    <p><span class="text-[#DAF7A6]">Flying Fish (2-4)</span></p>
+                    <p class="text-sm font-normal text-gray-400 mt-2">UOA attempts to break away from the 3-3 pack and cement their new elite status.</p>
+                </div>
+
+                <div class="p-4 bg-gray-900 bg-opacity-30 rounded-lg shadow-md md:col-span-1 md:col-start-2">
+                    <p class="text-2xl text-[#FF5733]">Game of the Week</p>
+                    <p class="mt-2"><span class="text-[#DAF7A6]">Toadhawks (5-1)</span> vs.</p>
+                    <p><span class="text-[#FFC300]">The Railroads (3-3)</span></p>
+                    <p class="text-sm font-normal text-gray-400 mt-2">The Railroads fight to climb out of the .500 mire against the league's second-best team.</p>
+                </div>
+                
+                <div class="p-4 bg-gray-900 bg-opacity-30 rounded-lg shadow-md">
+                    <p class="text-2xl text-[#FF5733]">Aura's Red Alert</p>
+                    <p class="mt-2"><span class="text-[#FFC300]">Farm, Aura (4-2)</span> vs.</p>
+                    <p><span class="text-[#C70039]">Nick's Nifty Team (2-4)</span></p>
+                    <p class="text-sm font-normal text-gray-400 mt-2">Aura needs this win to regain momentum and stay in the top 3.</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        const wrapLabel = (label) => {
+            if (label.length > 16) {
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + word).length > 16) {
+                        lines.push(currentLine.trim());
+                        currentLine = '';
+                    }
+                    currentLine += `${word} `;
+                }
+                lines.push(currentLine.trim());
+                return lines;
+            }
+            return label;
+        };
+        
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            } else {
+                return label;
+            }
+        };
+
+        const chartOptionsTemplate = {
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    labels: {
+                        color: '#DAF7A6',
+                        font: {
+                            size: 14,
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    ticks: { color: '#DAF7A6', beginAtZero: true },
+                    grid: { color: 'rgba(218, 247, 166, 0.1)' }
+                },
+                x: {
+                    ticks: { color: '#DAF7A6' },
+                    grid: { color: 'rgba(218, 247, 166, 0.1)' }
+                }
+            }
+        };
+
+        const matchupsData = {
+            labels: [
+                wrapLabel("Unofficial Airlines vs Nick's Nifty Team"), 
+                wrapLabel("First Down Syndrome vs Terry We Got A Situation"),
+                wrapLabel("Flying Fish vs Matt Gay"),
+                "Toadhawks vs Team ianb",
+                wrapLabel("The Railroads vs Farm, Aura")
+            ],
+            datasets: [{
+                label: 'Winner Score',
+                data: [214.5, 170.5, 165.2, 152.2, 165.7],
+                backgroundColor: '#FFC300',
+                borderColor: '#FFC300',
+                borderWidth: 1
+            }, {
+                label: 'Loser Score',
+                data: [155.7, 164.9, 154.0, 147.5, 145.9],
+                backgroundColor: '#C70039',
+                borderColor: '#C70039',
+                borderWidth: 1
+            }]
+        };
+        new Chart(document.getElementById('matchupScoresChart'), {
+            type: 'bar',
+            data: matchupsData,
+            options: chartOptionsTemplate
+        });
+        
+        const powerRankingsData = {
+            labels: [
+                '1. First Down Syndrome', '2. Toadhawks', '3. Unofficial Airlines', '4. The Railroads', '5. Farm, Aura',
+                '6. Flying Fish', wrapLabel('7. Terry We Got A Situation'), '8. Matt Gay', '9. Nick\'s Nifty Team', '10. Team ianb'
+            ].reverse(),
+            datasets: [{
+                label: 'Power Ranking',
+                data: [10, 9, 8, 7, 6, 5, 4, 3, 2, 1].reverse(),
+                backgroundColor: ['#C70039', '#C70039', '#900C3F', '#900C3F', '#900C3F', '#FF5733', '#FF5733', '#FFC300', '#DAF7A6', '#DAF7A6'].reverse(),
+                borderColor: '#581845',
+                borderWidth: 2
+            }]
+        };
+        new Chart(document.getElementById('powerRankingsChart'), {
+            type: 'bar',
+            data: powerRankingsData,
+            options: { ...chartOptionsTemplate, indexAxis: 'y', scales: { x: { ticks: { display: false }, grid: { display: false }  }, y: { ticks: { color: '#DAF7A6' }, grid: { color: 'rgba(218, 247, 166, 0.1)' } } } }
+        });
+
+        // Tiers: 6-0, 5-1 (2 Contenders), 4-2, 3-3, 3-3 (3 Bubble), 2-4, 2-4, 2-4, 2-4, 1-5 (5 Rebuilding)
+        const playoffTiersData = {
+            labels: ['Championship Contenders', 'Playoff Bubble', 'Rebuilding / Crying'],
+            datasets: [{
+                data: [2, 3, 5],
+                backgroundColor: ['#DAF7A6', '#FFC300', '#900C3F'],
+                borderColor: '#581845',
+                borderWidth: 4,
+                hoverOffset: 4
+            }]
+        };
+        new Chart(document.getElementById('playoffTiersChart'), {
+            type: 'doughnut',
+            data: playoffTiersData,
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#DAF7A6', font: { size: 14 } }
+                    },
+                    tooltip: {
+                       callbacks: {
+                            title: (tooltipItems) => tooltipItems[0].label
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
